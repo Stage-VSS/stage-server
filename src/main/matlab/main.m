@@ -1,6 +1,5 @@
-function h = main()
-
-    h = figure();
-
+function main()
+    presenter = stagenet.ui.presenters.MainPresenter();
+    presenter.go();
 end
 
