@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  
+   <configuration build-checksum="3638054077" file="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2-server\Stage Server.prj" location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2-server" name="Stage Server" target="target.mlapps" target-name="Package App">
+    
+      <param.appname>Stage Server</param.appname>
+    
+      <param.authnamewatermark/>
+    
+      <param.email/>
+    
+      <param.company>Stage-VSS</param.company>
+    
+      <param.icon>${PROJECT_ROOT}\Symphony_resources\icon_24.png</param.icon>
+    
+      <param.icons>
+      
+         <file>${PROJECT_ROOT}\Symphony_resources\icon_48.png</file>
+      
+         <file>${PROJECT_ROOT}\Symphony_resources\icon_24.png</file>
+      
+         <file>${PROJECT_ROOT}\Symphony_resources\icon_16.png</file>
+    
+      </param.icons>
+    
+      <param.summary/>
+    
+      <param.description/>
+    
+      <param.screenshot/>
+    
+      <param.version>1.0.1.1</param.version>
+    
+      <param.products.name>
+      
+         <item>MATLAB</item>
+    
+      </param.products.name>
+    
+      <param.products.id>
+      
+         <item>1</item>
+    
+      </param.products.id>
+    
+      <param.products.version>
+      
+         <item>8.6</item>
+    
+      </param.products.version>
+    
+      <param.platforms/>
+    
+      <param.output>${PROJECT_ROOT}\target</param.output>
+    
+      <param.guid>013094fa-cca3-4cf8-a02a-735d19db1112</param.guid>
+    
+      <unset>
+      
+         <param.authnamewatermark/>
+      
+         <param.email/>
+      
+         <param.summary/>
+      
+         <param.description/>
+      
+         <param.screenshot/>
+      
+         <param.platforms/>
+    
+      </unset>
+    
+      <fileset.main>
+      
+         <file>${PROJECT_ROOT}\src\main\matlab\main.m</file>
+    
+      </fileset.main>
+    
+      <fileset.depfun>
+      
+         <file>${PROJECT_ROOT}\src\main\matlab\+stagenet\+app\App.m</file>
+    
+      </fileset.depfun>
+    
+      <fileset.resources>
+      
+         <file>${PROJECT_ROOT}\src</file>
+    
+      </fileset.resources>
+    
+      <fileset.package/>
+    
+      <build-deliverables>
+      
+         <file location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2-server" name="target" optional="false">C:\Users\Client Admin\Documents\src\Stage-VSS\stage2-server\target</file>
+    
+      </build-deliverables>
+    
+      <workflow/>
+    
+      <matlab>
+      
+         <root>C:\Program Files\MATLAB\R2015b</root>
+      
+         <toolboxes/>
+    
+      </matlab>
+    
+      <platform>
+      
+         <unix>false</unix>
+      
+         <mac>false</mac>
+      
+         <windows>true</windows>
+      
+         <win2k>false</win2k>
+      
+         <winxp>false</winxp>
+      
+         <vista>false</vista>
+      
+         <linux>false</linux>
+      
+         <solaris>false</solaris>
+      
+         <osver>6.1</osver>
+      
+         <os32>false</os32>
+      
+         <os64>true</os64>
+      
+         <arch>win64</arch>
+      
+         <matlab>true</matlab>
+    
+      </platform>
+  
+   </configuration>
+
+</deployment-project>
