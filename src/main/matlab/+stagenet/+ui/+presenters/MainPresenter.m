@@ -1,7 +1,7 @@
 classdef MainPresenter < appbox.Presenter
 
     properties (Access = private)
-        
+        settings
     end
 
     methods
@@ -11,6 +11,8 @@ classdef MainPresenter < appbox.Presenter
                 view = stagenet.ui.views.MainView();
             end
             obj = obj@appbox.Presenter(view);
+            
+            obj.settings = stagenet.ui.settings.MainSettings();
         end
 
     end
@@ -21,7 +23,7 @@ classdef MainPresenter < appbox.Presenter
             try
                 obj.loadSettings();
             catch x
-                obj.log.debug(['Failed to load presenter settings: ' x.message], x);
+                warning(['Failed to load presenter settings: ' x.message]);
             end
         end
 
@@ -29,7 +31,7 @@ classdef MainPresenter < appbox.Presenter
             try
                 obj.saveSettings();
             catch x
-                obj.log.debug(['Failed to save presenter settings: ' x.message], x);
+                warning(['Failed to save presenter settings: ' x.message]);
             end
         end
 
@@ -42,11 +44,14 @@ classdef MainPresenter < appbox.Presenter
     methods (Access = private)
 
         function loadSettings(obj)
-            
+            if ~isempty(obj.settings.viewPosition)
+                obj.view.position = obj.settings.viewPosition;
+            end
         end
 
         function saveSettings(obj)
-            
+            obj.settings.viewPosition = obj.view.position;
+            obj.settings.save();
         end
 
     end
