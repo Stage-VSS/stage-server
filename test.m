@@ -1,6 +1,6 @@
 function test(package)
     if nargin < 1
-        package = 'stagenet';
+        package = 'stageui';
     end
     addpath(genpath(fullfile('src', 'test')));
     suite = matlab.unittest.TestSuite.fromPackage(package, 'IncludingSubpackages', true);

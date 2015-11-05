@@ -14,7 +14,7 @@ function package(skipTests)
     config = root.getElementsByTagName('configuration').item(0);
 
     version = config.getElementsByTagName('param.version').item(0);
-    version.setTextContent(stagenet.app.App.version);
+    version.setTextContent(stageui.app.App.version);
 
     % FIXME: Not sure why Matlab is including the runtime core requirement.
     products = config.getElementsByTagName('param.products.name').item(0);

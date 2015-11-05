@@ -8,11 +8,11 @@ classdef MainPresenter < appbox.Presenter
 
         function obj = MainPresenter(view)
             if nargin < 1
-                view = stagenet.ui.views.MainView();
+                view = stageui.ui.views.MainView();
             end
             obj = obj@appbox.Presenter(view);
             
-            obj.settings = stagenet.ui.settings.MainSettings();
+            obj.settings = stageui.ui.settings.MainSettings();
         end
 
     end

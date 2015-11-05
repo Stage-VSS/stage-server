@@ -1,5 +1,5 @@
 function main()
-    presenter = stagenet.ui.presenters.MainPresenter();
+    presenter = stageui.ui.presenters.MainPresenter();
     presenter.go();
 end
 
