@@ -11,7 +11,7 @@ classdef MainView < appbox.View
     methods
 
         function createUi(obj)
-            import appbox.util.*;
+            import appbox.*;
             
             set(obj.figureHandle, ...
                 'Name', 'Stage Server', ...
