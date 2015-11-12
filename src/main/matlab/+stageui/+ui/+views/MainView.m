@@ -20,7 +20,7 @@ classdef MainView < appbox.View
             
             set(obj.figureHandle, ...
                 'Name', 'Stage Server', ...
-            	'Position', screenCenter(325, 212));
+            	'Position', screenCenter(325, 206));
             
             mainLayout = uix.VBox( ...
                 'Parent', obj.figureHandle, ...
@@ -68,7 +68,7 @@ classdef MainView < appbox.View
                 'Callback', @(h,d)notify(obj, 'SetFullscreen'));
             set(windowLayout, ...
                 'Widths', [60 -1], ...
-                'Heights', [25 25 25 25]);
+                'Heights', [23 23 23 23]);
             
             % Start control.
             controlsLayout = uix.HBox( ...
@@ -83,7 +83,7 @@ classdef MainView < appbox.View
                 'Callback', @(h,d)notify(obj, 'Start'));
             set(controlsLayout, 'Widths', [-1 75]);
             
-            set(mainLayout, 'Heights', [-1 25]);
+            set(mainLayout, 'Heights', [-1 23]);
             
             % Set start button to appear as the default button.
             try %#ok<TRYNC>

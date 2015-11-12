@@ -61,15 +61,13 @@ classdef MainPresenter < appbox.Presenter
         function onViewSelectedStart(obj, ~, ~)
             obj.view.update();
             
-            width = obj.view.getWidth();
-            height = obj.view.getHeight();
+            width = str2double(obj.view.getWidth());
+            height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
             fullscreen = obj.view.getFullscreen();
             try
-                disp(width);
-                disp(height);
-                disp(monitor);
-                disp(fullscreen);
+                window = stage.core.Window([width, height], fullscreen, monitor);
+                canvas = stage.core.Canvas(window, 'disableDwm', false);
             catch x
                 obj.view.showError(x.message);
                 return;
