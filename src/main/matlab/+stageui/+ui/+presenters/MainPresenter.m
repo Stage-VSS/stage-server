@@ -57,10 +57,15 @@ classdef MainPresenter < appbox.Presenter
         end
         
         function populateHandlerTypeList(obj)
-            names = {'Standard'};
-            values = {[]};
+            classNames = {'stage.builtin.network.BasicNetEventHandler'};
             
-            obj.view.setHandlerTypeList(names, values);
+            displayNames = cell(1, numel(classNames));
+            for i = 1:numel(classNames)
+                split = strsplit(classNames{i}, '.');
+                displayNames{i} = split{end};
+            end
+            
+            obj.view.setHandlerTypeList(displayNames, classNames);
         end
         
         function onViewSetFullscreen(obj, ~, ~)
@@ -79,11 +84,12 @@ classdef MainPresenter < appbox.Presenter
             height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
             fullscreen = obj.view.getFullscreen();
-%             handlerType = obj.view.getSelectedHandlerType();
+            handlerType = obj.view.getSelectedHandlerType();
             try
                 window = stage.core.Window([width, height], fullscreen, monitor);
                 canvas = stage.core.Canvas(window, 'disableDwm', false);
-                handler = stage.core.network.NetEventHandler(canvas);
+                constructor = str2func(handlerType);
+                handler = constructor(canvas);
                 server = stage.core.network.StageServer(window, handler);
                 
                 obj.view.hide();
