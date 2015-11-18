@@ -23,6 +23,7 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setWidth('640');
             obj.view.setHeight('480');
             obj.populateMonitorList();
+            obj.populateHandlerTypeList();
             try
                 obj.loadSettings();
             catch x
@@ -35,6 +36,7 @@ classdef MainPresenter < appbox.Presenter
             v = obj.view;
             obj.addListener(v, 'SetFullscreen', @obj.onViewSetFullscreen);
             obj.addListener(v, 'Start', @obj.onViewSelectedStart);
+            obj.addListener(v, 'Cancel', @obj.onViewSelectedCancel);
         end
 
     end
@@ -54,8 +56,20 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setMonitorList(names, values);
         end
         
+        function populateHandlerTypeList(obj)
+            names = {'Standard'};
+            values = {[]};
+            
+            obj.view.setHandlerTypeList(names, values);
+        end
+        
         function onViewSetFullscreen(obj, ~, ~)
             obj.updateStateOfControls();
+        end
+        
+        function updateStateOfControls(obj)
+            fullscreen = obj.view.getFullscreen();
+            obj.view.enableSelectMonitor(fullscreen);
         end
         
         function onViewSelectedStart(obj, ~, ~)
@@ -65,11 +79,20 @@ classdef MainPresenter < appbox.Presenter
             height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
             fullscreen = obj.view.getFullscreen();
+%             handlerType = obj.view.getSelectedHandlerType();
             try
                 window = stage.core.Window([width, height], fullscreen, monitor);
                 canvas = stage.core.Canvas(window, 'disableDwm', false);
+                handler = stage.core.network.NetEventHandler(canvas);
+                server = stage.core.network.StageServer(window, handler);
+                
+                obj.view.hide();
+                obj.view.update();
+                
+                server.start();
             catch x
                 obj.view.showError(x.message);
+                obj.view.show();
                 return;
             end
             
@@ -82,9 +105,8 @@ classdef MainPresenter < appbox.Presenter
             obj.stop();
         end
         
-        function updateStateOfControls(obj)
-            fullscreen = obj.view.getFullscreen();
-            obj.view.enableSelectMonitor(fullscreen);
+        function onViewSelectedCancel(obj, ~, ~)
+            obj.stop();
         end
 
         function loadSettings(obj)
