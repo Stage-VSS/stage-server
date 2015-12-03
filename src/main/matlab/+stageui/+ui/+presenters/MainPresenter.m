@@ -23,7 +23,8 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setWidth('640');
             obj.view.setHeight('480');
             obj.populateMonitorList();
-            obj.populateHandlerTypeList();
+            obj.populateTypeList();
+            obj.view.setPort('5678');
             try
                 obj.loadSettings();
             catch x
@@ -56,16 +57,15 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setMonitorList(names, values);
         end
         
-        function populateHandlerTypeList(obj)
-            classNames = {'stage.builtin.network.BasicNetEventHandler'};
+        function populateTypeList(obj)
+            classNames = {'stage.core.network.StageServer'};
             
             displayNames = cell(1, numel(classNames));
             for i = 1:numel(classNames)
-                split = strsplit(classNames{i}, '.');
-                displayNames{i} = split{end};
+                displayNames{i} = classNames{i};
             end
             
-            obj.view.setHandlerTypeList(displayNames, classNames);
+            obj.view.setTypeList(displayNames, classNames);
         end
         
         function onViewSetFullscreen(obj, ~, ~)
@@ -84,18 +84,18 @@ classdef MainPresenter < appbox.Presenter
             height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
             fullscreen = obj.view.getFullscreen();
-            handlerType = obj.view.getSelectedHandlerType();
+            type = obj.view.getSelectedType();
+            port = str2double(obj.view.getPort());
             try
                 window = stage.core.Window([width, height], fullscreen, monitor);
                 canvas = stage.core.Canvas(window, 'disableDwm', false);
-                constructor = str2func(handlerType);
-                handler = constructor(canvas);
-                server = stage.core.network.StageServer(window, handler);
+                constructor = str2func(type);
+                server = constructor(canvas);
                 
                 obj.view.hide();
                 obj.view.update();
                 
-                server.start();
+                server.start(port);
             catch x
                 obj.view.showError(x.message);
                 obj.view.show();
