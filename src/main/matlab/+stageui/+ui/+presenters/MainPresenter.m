@@ -132,6 +132,12 @@ classdef MainPresenter < appbox.Presenter
             if ~isempty(obj.settings.fullscreen)
                 obj.view.setFullscreen(obj.settings.fullscreen);
             end
+            if ~isempty(obj.settings.type)
+                
+            end
+            if ~isempty(obj.settings.port)
+                obj.view.setPort(num2str(obj.settings.port));
+            end
             if ~isempty(obj.settings.viewPosition)
                 obj.view.position = obj.settings.viewPosition;
             end
@@ -142,6 +148,8 @@ classdef MainPresenter < appbox.Presenter
             obj.settings.height = str2double(obj.view.getHeight());
             obj.settings.monitorIndex = find(cellfun(@(m)m == obj.view.getSelectedMonitor(), obj.view.getMonitorList()));
             obj.settings.fullscreen = obj.view.getFullscreen() ~= 0;
+            obj.settings.type = obj.view.getSelectedType();
+            obj.settings.port = str2double(obj.view.getPort());
             obj.settings.viewPosition = obj.view.position;
             obj.settings.save();
         end

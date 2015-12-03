@@ -5,6 +5,8 @@ classdef MainSettings < appbox.Settings
         height
         monitorIndex
         fullscreen
+        type
+        port
         viewPosition
     end
     
@@ -29,12 +31,12 @@ classdef MainSettings < appbox.Settings
         end
         
         function i = get.monitorIndex(obj)
-            i = obj.get('monitorIndex');
+            i = obj.get('monitor');
         end
         
         function set.monitorIndex(obj, i)
             validateattributes(i, {'numeric'}, {'scalar'});
-            obj.put('monitorIndex', i);
+            obj.put('monitor', i);
         end
         
         function tf = get.fullscreen(obj)
@@ -44,6 +46,24 @@ classdef MainSettings < appbox.Settings
         function set.fullscreen(obj, tf)
             validateattributes(tf, {'logical'}, {'scalar'});
             obj.put('fullscreen', tf);
+        end
+        
+        function t = get.type(obj)
+            t = obj.get('type');
+        end
+        
+        function set.type(obj, t)
+            validateattributes(t, {'char'}, {'row'});
+            obj.put('type', t);
+        end
+        
+        function p = get.port(obj)
+            p = obj.get('port');
+        end
+        
+        function set.port(obj, p)
+            validateattributes(p, {'numeric'}, {'scalar'});
+            obj.put('port', p);
         end
         
         function p = get.viewPosition(obj)
