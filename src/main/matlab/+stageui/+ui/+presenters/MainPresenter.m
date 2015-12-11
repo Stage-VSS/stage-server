@@ -89,6 +89,9 @@ classdef MainPresenter < appbox.Presenter
             try
                 window = stage.core.Window([width, height], fullscreen, monitor);
                 canvas = stage.core.Canvas(window, 'disableDwm', false);
+                canvas.clear();
+                window.flip();
+                
                 constructor = str2func(type);
                 server = constructor(canvas);
                 
