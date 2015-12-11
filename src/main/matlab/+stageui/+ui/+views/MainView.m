@@ -2,16 +2,19 @@ classdef MainView < appbox.View
 
     events
         SetFullscreen
+        MinimizeAdvanced
         Start
         Cancel
     end
 
     properties (Access = private)
         parametersLayout
+        windowBox
         widthField
         heightField
         monitorPopupMenu
         fullscreenCheckbox
+        advancedBox
         typePopupMenu
         portField
         startButton
@@ -25,7 +28,7 @@ classdef MainView < appbox.View
             
             set(obj.figureHandle, ...
                 'Name', 'Stage Server', ...
-            	'Position', screenCenter(300, 286));
+            	'Position', screenCenter(300, 211));
             
             mainLayout = uix.VBox( ...
                 'Parent', obj.figureHandle);
@@ -33,7 +36,7 @@ classdef MainView < appbox.View
             obj.parametersLayout = uix.VBox( ...
                 'Parent', mainLayout);
             
-            windowBox = uix.BoxPanel( ...
+            obj.windowBox = uix.BoxPanel( ...
                 'Parent', obj.parametersLayout, ...
                 'Title', 'Window', ...
                 'BorderType', 'none', ...
@@ -42,7 +45,7 @@ classdef MainView < appbox.View
                 'Padding', 11);
             
             windowLayout = uix.Grid( ...
-                'Parent', windowBox, ...
+                'Parent', obj.windowBox, ...
                 'Spacing', 7);
             Label( ...
                 'Parent', windowLayout, ...
@@ -77,15 +80,17 @@ classdef MainView < appbox.View
                 'Widths', [60 -1], ...
                 'Heights', [23 23 23 23]);
             
-            advancedBox = uix.BoxPanel( ...
+            obj.advancedBox = uix.BoxPanel( ...
                 'Parent', obj.parametersLayout, ...
                 'Title', 'Advanced', ...
                 'BorderType', 'none', ...
                 'FontName', get(obj.figureHandle, 'DefaultUicontrolFontName'), ...
                 'FontSize', get(obj.figureHandle, 'DefaultUicontrolFontSize'), ...
-                'Padding', 11);
+                'Padding', 11, ...
+                'Minimized', true, ...
+                'MinimizeFcn', @(h,d)notify(obj, 'MinimizeAdvanced'));
             advancedLayout = uix.Grid( ...
-                'Parent', advancedBox, ...
+                'Parent', obj.advancedBox, ...
                 'Spacing', 7);
             
             Label( ...
@@ -106,10 +111,9 @@ classdef MainView < appbox.View
                 'Widths', [60 -1], ...
                 'Heights', [23 23]);
             
-            javacomponent('javax.swing.JSeparator', [], obj.parametersLayout);
-            
             set(obj.parametersLayout, ...
-                'Heights', [148 -1 1]);
+                'Heights', [-1 17], ...
+                'MinimumHeights', [149 17]);
             
             % Start control.
             controlsLayout = uix.HBox( ...
@@ -138,6 +142,17 @@ classdef MainView < appbox.View
                 h = handle(obj.figureHandle);
                 h.setDefaultButton(obj.startButton);
             end
+        end
+        
+        function h = getViewHeight(obj)
+            p = get(obj.figureHandle, 'Position');
+            h = p(4);
+        end
+
+        function setViewHeight(obj, h)
+            p = get(obj.figureHandle, 'Position');
+            delta = p(4) - h;
+            set(obj.figureHandle, 'Position', p + [0 delta 0 -delta]);
         end
         
         function w = getWidth(obj)
@@ -183,6 +198,30 @@ classdef MainView < appbox.View
         
         function setFullscreen(obj, tf)
             set(obj.fullscreenCheckbox, 'Value', tf);
+        end
+        
+        function tf = isAdvancedMinimized(obj)
+            tf = get(obj.advancedBox, 'Minimized');
+        end
+        
+        function setAdvancedMinimized(obj, tf)
+            set(obj.advancedBox, 'Minimized', tf);
+        end
+        
+        function h = getAdvancedMinimumHeight(obj)
+            heights = get(obj.parametersLayout, 'MinimumHeights');
+            h = heights(2);
+        end
+
+        function h = getAdvancedHeight(obj)
+            heights = get(obj.parametersLayout, 'Heights');
+            h = heights(2);
+        end
+        
+        function setAdvancedHeight(obj, h)
+            heights = get(obj.parametersLayout, 'Heights');
+            heights(2) = h;
+            set(obj.parametersLayout, 'Heights', heights);
         end
         
         function t = getSelectedType(obj)

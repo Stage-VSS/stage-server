@@ -35,7 +35,8 @@ classdef MainPresenter < appbox.Presenter
 
         function onBind(obj)
             v = obj.view;
-            obj.addListener(v, 'SetFullscreen', @obj.onViewSetFullscreen);
+            obj.addListener(v, 'SetFullscreen', @obj.onViewSelectedSetFullscreen);
+            obj.addListener(v, 'MinimizeAdvanced', @obj.onViewSelectedMinimizeAdvanced);
             obj.addListener(v, 'Start', @obj.onViewSelectedStart);
             obj.addListener(v, 'Cancel', @obj.onViewSelectedCancel);
         end
@@ -68,8 +69,30 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setTypeList(displayNames, classNames);
         end
         
-        function onViewSetFullscreen(obj, ~, ~)
+        function onViewSelectedSetFullscreen(obj, ~, ~)
             obj.updateStateOfControls();
+        end
+        
+        function onViewSelectedMinimizeAdvanced(obj, ~, ~)
+            if obj.view.isAdvancedMinimized()
+                obj.maximizeAdvanced();
+            else
+                obj.minimizeAdvanced();
+            end
+        end
+        
+        function minimizeAdvanced(obj)
+            delta = obj.view.getAdvancedHeight() - obj.view.getAdvancedMinimumHeight();
+            obj.view.setViewHeight(obj.view.getViewHeight() - delta);
+            obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() - delta);
+            obj.view.setAdvancedMinimized(true);
+        end
+        
+        function maximizeAdvanced(obj)
+            delta = 75;
+            obj.view.setViewHeight(obj.view.getViewHeight() + delta);
+            obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() + delta);
+            obj.view.setAdvancedMinimized(false);
         end
         
         function updateStateOfControls(obj)
