@@ -228,6 +228,14 @@ classdef MainView < appbox.View
             t = get(obj.typePopupMenu, 'Value');
         end
         
+        function setSelectedType(obj, t)
+            set(obj.typePopupMenu, 'Value', t);
+        end
+        
+        function l = getTypeList(obj)
+            l = get(obj.typePopupMenu, 'Values');
+        end
+        
         function setTypeList(obj, names, values)
             set(obj.typePopupMenu, 'String', names);
             set(obj.typePopupMenu, 'Values', values);

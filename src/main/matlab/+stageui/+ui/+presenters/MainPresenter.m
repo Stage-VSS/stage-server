@@ -51,7 +51,7 @@ classdef MainPresenter < appbox.Presenter
             names = cell(1, numel(monitors));
             for i = 1:numel(monitors)
                 res = monitors{i}.resolution;
-                names{i} = [monitors{i}.name, ' (' num2str(res(1)) ' x ' num2str(res(2)) ')'];
+                names{i} = [monitors{i}.name ' (' num2str(res(1)) ' x ' num2str(res(2)) ')'];
             end
             values = monitors;
             
@@ -148,18 +148,28 @@ classdef MainPresenter < appbox.Presenter
             if ~isempty(obj.settings.height)
                 obj.view.setHeight(num2str(obj.settings.height));
             end
-            if ~isempty(obj.settings.monitorIndex)
-                i = obj.settings.monitorIndex;
-                m = obj.view.getMonitorList();
-                if numel(m) >= i
-                    obj.view.setSelectedMonitor(m{i});
+            if ~isempty(obj.settings.monitor)
+                list = obj.view.getMonitorList();
+                for i = 1:numel(list)
+                    m = list{i};
+                    if strcmp([m.name ' (' num2str(m.resolution(1)) ' x ' num2str(m.resolution(2)) ')'], obj.settings.monitor)
+                        obj.view.setSelectedMonitor(m);
+                        break;
+                    end
                 end
             end
             if ~isempty(obj.settings.fullscreen)
                 obj.view.setFullscreen(obj.settings.fullscreen);
             end
             if ~isempty(obj.settings.type)
-                
+                list = obj.view.getTypeList();
+                for i = 1:numel(list)
+                    t = list{i};
+                    if strcmp(t, obj.settings.type)
+                        obj.view.setSelectedType(t);
+                        break;
+                    end
+                end
             end
             if ~isempty(obj.settings.port)
                 obj.view.setPort(num2str(obj.settings.port));
@@ -172,11 +182,18 @@ classdef MainPresenter < appbox.Presenter
         function saveSettings(obj)
             obj.settings.width = str2double(obj.view.getWidth());
             obj.settings.height = str2double(obj.view.getHeight());
-            obj.settings.monitorIndex = find(cellfun(@(m)m == obj.view.getSelectedMonitor(), obj.view.getMonitorList()));
+            monitor = obj.view.getSelectedMonitor();
+            obj.settings.monitor = [monitor.name ' (' num2str(monitor.resolution(1)) ' x ' num2str(monitor.resolution(2)) ')'];
             obj.settings.fullscreen = obj.view.getFullscreen() ~= 0;
             obj.settings.type = obj.view.getSelectedType();
             obj.settings.port = str2double(obj.view.getPort());
-            obj.settings.viewPosition = obj.view.position;
+            position = obj.view.position;
+            if ~obj.view.isAdvancedMinimized()
+                delta = obj.view.getAdvancedHeight() - obj.view.getAdvancedMinimumHeight();
+                position(2) = position(2) + delta;
+                position(4) = position(4) - delta;
+            end
+            obj.settings.viewPosition = position;
             obj.settings.save();
         end
 

@@ -3,7 +3,7 @@ classdef MainSettings < appbox.Settings
     properties
         width
         height
-        monitorIndex
+        monitor
         fullscreen
         type
         port
@@ -30,13 +30,13 @@ classdef MainSettings < appbox.Settings
             obj.put('height', h);
         end
         
-        function i = get.monitorIndex(obj)
-            i = obj.get('monitor');
+        function m = get.monitor(obj)
+            m = obj.get('monitor');
         end
         
-        function set.monitorIndex(obj, i)
-            validateattributes(i, {'numeric'}, {'scalar'});
-            obj.put('monitor', i);
+        function set.monitor(obj, m)
+            validateattributes(m, {'char'}, {'row'});
+            obj.put('monitor', m);
         end
         
         function tf = get.fullscreen(obj)
