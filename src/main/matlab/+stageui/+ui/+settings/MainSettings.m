@@ -7,6 +7,7 @@ classdef MainSettings < appbox.Settings
         fullscreen
         type
         port
+        disableDwm
         viewPosition
     end
     
@@ -64,6 +65,15 @@ classdef MainSettings < appbox.Settings
         function set.port(obj, p)
             validateattributes(p, {'numeric'}, {'scalar'});
             obj.put('port', p);
+        end
+        
+        function tf = get.disableDwm(obj)
+            tf = obj.get('disableDwm');
+        end
+        
+        function set.disableDwm(obj, tf)
+            validateattributes(tf, {'logical'}, {'scalar'});
+            obj.put('disableDwm', tf);
         end
         
         function p = get.viewPosition(obj)

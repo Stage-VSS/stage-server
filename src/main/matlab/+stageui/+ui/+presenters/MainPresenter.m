@@ -25,6 +25,7 @@ classdef MainPresenter < appbox.Presenter
             obj.populateMonitorList();
             obj.populateTypeList();
             obj.view.setPort('5678');
+            obj.view.setDisableDwm(true);
             try
                 obj.loadSettings();
             catch x
@@ -89,7 +90,7 @@ classdef MainPresenter < appbox.Presenter
         end
         
         function maximizeAdvanced(obj)
-            delta = 75;
+            delta = 105;
             obj.view.setViewHeight(obj.view.getViewHeight() + delta);
             obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() + delta);
             obj.view.setAdvancedMinimized(false);
@@ -109,9 +110,10 @@ classdef MainPresenter < appbox.Presenter
             fullscreen = obj.view.getFullscreen();
             type = obj.view.getSelectedType();
             port = str2double(obj.view.getPort());
+            disableDwm = obj.view.getDisableDwm();
             try
                 window = stage.core.Window([width, height], fullscreen, monitor);
-                canvas = stage.core.Canvas(window, 'disableDwm', false);
+                canvas = stage.core.Canvas(window, 'disableDwm', disableDwm);
                 canvas.clear();
                 window.flip();
                 
@@ -174,6 +176,9 @@ classdef MainPresenter < appbox.Presenter
             if ~isempty(obj.settings.port)
                 obj.view.setPort(num2str(obj.settings.port));
             end
+            if ~isempty(obj.settings.disableDwm)
+                obj.view.setDisableDwm(obj.settings.disableDwm);
+            end
             if ~isempty(obj.settings.viewPosition)
                 obj.view.position = obj.settings.viewPosition;
             end
@@ -187,6 +192,7 @@ classdef MainPresenter < appbox.Presenter
             obj.settings.fullscreen = obj.view.getFullscreen() ~= 0;
             obj.settings.type = obj.view.getSelectedType();
             obj.settings.port = str2double(obj.view.getPort());
+            obj.settings.disableDwm = obj.view.getDisableDwm() ~= 0;
             position = obj.view.position;
             if ~obj.view.isAdvancedMinimized()
                 delta = obj.view.getAdvancedHeight() - obj.view.getAdvancedMinimumHeight();
