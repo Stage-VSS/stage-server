@@ -59,7 +59,7 @@ classdef MainPresenter < appbox.Presenter
         end
         
         function populateTypeList(obj)
-            classNames = {'stage.core.network.StageServer'};
+            classNames = {'stage.core.network.Server'};
             
             displayNames = cell(1, numel(classNames));
             for i = 1:numel(classNames)
