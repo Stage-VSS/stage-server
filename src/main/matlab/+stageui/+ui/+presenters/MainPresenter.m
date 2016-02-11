@@ -23,7 +23,7 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setWidth('640');
             obj.view.setHeight('480');
             obj.populateMonitorList();
-            obj.populateTypeList();
+            obj.populateEventHandlerList();
             obj.view.setPort('5678');
             obj.view.setDisableDwm(true);
             try
@@ -59,15 +59,15 @@ classdef MainPresenter < appbox.Presenter
             obj.view.setMonitorList(names, values);
         end
         
-        function populateTypeList(obj)
-            classNames = {'stage.core.network.Server'};
+        function populateEventHandlerList(obj)
+            classNames = {'stage.builtin.network.BasicEventHandler'};
             
             displayNames = cell(1, numel(classNames));
             for i = 1:numel(classNames)
                 displayNames{i} = classNames{i};
             end
             
-            obj.view.setTypeList(displayNames, classNames);
+            obj.view.setEventHandlerList(displayNames, classNames);
         end
         
         function onViewSelectedSetFullscreen(obj, ~, ~)
@@ -108,7 +108,7 @@ classdef MainPresenter < appbox.Presenter
             height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
             fullscreen = obj.view.getFullscreen();
-            type = obj.view.getSelectedType();
+            eventHandler = obj.view.getSelectedEventHandler();
             port = str2double(obj.view.getPort());
             disableDwm = obj.view.getDisableDwm();
             try
@@ -117,8 +117,8 @@ classdef MainPresenter < appbox.Presenter
                 canvas.clear();
                 window.flip();
                 
-                constructor = str2func(type);
-                server = constructor(canvas);
+                constructor = str2func(eventHandler);
+                server = stage.core.network.Server(constructor(canvas));
                 
                 obj.view.hide();
                 obj.view.update();
@@ -163,12 +163,12 @@ classdef MainPresenter < appbox.Presenter
             if ~isempty(obj.settings.fullscreen)
                 obj.view.setFullscreen(obj.settings.fullscreen);
             end
-            if ~isempty(obj.settings.type)
-                list = obj.view.getTypeList();
+            if ~isempty(obj.settings.eventHandler)
+                list = obj.view.getEventHandlerList();
                 for i = 1:numel(list)
                     t = list{i};
-                    if strcmp(t, obj.settings.type)
-                        obj.view.setSelectedType(t);
+                    if strcmp(t, obj.settings.eventHandler)
+                        obj.view.setSelectedEventHandler(t);
                         break;
                     end
                 end
@@ -190,7 +190,7 @@ classdef MainPresenter < appbox.Presenter
             monitor = obj.view.getSelectedMonitor();
             obj.settings.monitor = [monitor.name ' (' num2str(monitor.resolution(1)) ' x ' num2str(monitor.resolution(2)) ')'];
             obj.settings.fullscreen = obj.view.getFullscreen() ~= 0;
-            obj.settings.type = obj.view.getSelectedType();
+            obj.settings.eventHandler = obj.view.getSelectedEventHandler();
             obj.settings.port = str2double(obj.view.getPort());
             obj.settings.disableDwm = obj.view.getDisableDwm() ~= 0;
             position = obj.view.position;

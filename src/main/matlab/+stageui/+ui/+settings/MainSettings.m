@@ -5,7 +5,7 @@ classdef MainSettings < appbox.Settings
         height
         monitor
         fullscreen
-        type
+        eventHandler
         port
         disableDwm
         viewPosition
@@ -49,13 +49,13 @@ classdef MainSettings < appbox.Settings
             obj.put('fullscreen', tf);
         end
         
-        function t = get.type(obj)
-            t = obj.get('type');
+        function h = get.eventHandler(obj)
+            h = obj.get('eventHandler');
         end
         
-        function set.type(obj, t)
-            validateattributes(t, {'char'}, {'row'});
-            obj.put('type', t);
+        function set.eventHandler(obj, h)
+            validateattributes(h, {'char'}, {'row'});
+            obj.put('eventHandler', h);
         end
         
         function p = get.port(obj)

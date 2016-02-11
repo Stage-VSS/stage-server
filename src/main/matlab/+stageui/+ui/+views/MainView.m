@@ -15,7 +15,7 @@ classdef MainView < appbox.View
         monitorPopupMenu
         fullscreenCheckbox
         advancedBox
-        typePopupMenu
+        eventHandlerPopupMenu
         portField
         disableDwmCheckbox
         startButton
@@ -96,14 +96,14 @@ classdef MainView < appbox.View
             
             Label( ...
                 'Parent', advancedLayout, ...
-                'String', 'Type:');
+                'String', 'Event handler:');
             Label( ...
                 'Parent', advancedLayout, ...
                 'String', 'Port:');
             Label( ...
                 'Parent', advancedLayout, ...
-                'String', 'Disable DWM: ');
-            obj.typePopupMenu = MappedPopupMenu( ...
+                'String', 'Disable DWM:');
+            obj.eventHandlerPopupMenu = MappedPopupMenu( ...
                 'Parent', advancedLayout, ...
                 'String', {' '}, ...
                 'HorizontalAlignment', 'left');
@@ -232,21 +232,21 @@ classdef MainView < appbox.View
             set(obj.parametersLayout, 'Heights', heights);
         end
         
-        function t = getSelectedType(obj)
-            t = get(obj.typePopupMenu, 'Value');
+        function h = getSelectedEventHandler(obj)
+            h = get(obj.eventHandlerPopupMenu, 'Value');
         end
         
-        function setSelectedType(obj, t)
-            set(obj.typePopupMenu, 'Value', t);
+        function setSelectedEventHandler(obj, h)
+            set(obj.eventHandlerPopupMenu, 'Value', h);
         end
         
-        function l = getTypeList(obj)
-            l = get(obj.typePopupMenu, 'Values');
+        function h = getEventHandlerList(obj)
+            h = get(obj.eventHandlerPopupMenu, 'Values');
         end
         
-        function setTypeList(obj, names, values)
-            set(obj.typePopupMenu, 'String', names);
-            set(obj.typePopupMenu, 'Values', values);
+        function setEventHandlerList(obj, names, values)
+            set(obj.eventHandlerPopupMenu, 'String', names);
+            set(obj.eventHandlerPopupMenu, 'Values', values);
         end
         
         function p = getPort(obj)
