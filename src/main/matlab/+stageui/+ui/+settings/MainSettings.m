@@ -5,7 +5,6 @@ classdef MainSettings < appbox.Settings
         height
         monitor
         fullscreen
-        type
         port
         disableDwm
         viewPosition
@@ -47,15 +46,6 @@ classdef MainSettings < appbox.Settings
         function set.fullscreen(obj, tf)
             validateattributes(tf, {'logical'}, {'scalar'});
             obj.put('fullscreen', tf);
-        end
-        
-        function h = get.type(obj)
-            h = obj.get('type');
-        end
-        
-        function set.type(obj, h)
-            validateattributes(h, {'char'}, {'row'});
-            obj.put('type', h);
         end
         
         function p = get.port(obj)

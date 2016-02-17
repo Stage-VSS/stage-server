@@ -15,7 +15,6 @@ classdef MainView < appbox.View
         monitorPopupMenu
         fullscreenCheckbox
         advancedBox
-        typePopupMenu
         portField
         disableDwmCheckbox
         startButton
@@ -96,17 +95,10 @@ classdef MainView < appbox.View
             
             Label( ...
                 'Parent', advancedLayout, ...
-                'String', 'Type:');
-            Label( ...
-                'Parent', advancedLayout, ...
                 'String', 'Port:');
             Label( ...
                 'Parent', advancedLayout, ...
                 'String', 'Disable DWM:');
-            obj.typePopupMenu = MappedPopupMenu( ...
-                'Parent', advancedLayout, ...
-                'String', {' '}, ...
-                'HorizontalAlignment', 'left');
             obj.portField = uicontrol( ...
                 'Parent', advancedLayout, ...
                 'Style', 'edit', ...
@@ -117,7 +109,7 @@ classdef MainView < appbox.View
                 'HorizontalAlignment', 'left');
             set(advancedLayout, ...
                 'Widths', [80 -1], ...
-                'Heights', [23 23 23]);
+                'Heights', [23 23]);
             
             set(obj.parametersLayout, ...
                 'Heights', [-1 17], ...
@@ -230,23 +222,6 @@ classdef MainView < appbox.View
             heights = get(obj.parametersLayout, 'Heights');
             heights(2) = h;
             set(obj.parametersLayout, 'Heights', heights);
-        end
-        
-        function h = getSelectedType(obj)
-            h = get(obj.typePopupMenu, 'Value');
-        end
-        
-        function setSelectedType(obj, h)
-            set(obj.typePopupMenu, 'Value', h);
-        end
-        
-        function h = getTypeList(obj)
-            h = get(obj.typePopupMenu, 'Values');
-        end
-        
-        function setTypeList(obj, names, values)
-            set(obj.typePopupMenu, 'String', names);
-            set(obj.typePopupMenu, 'Values', values);
         end
         
         function p = getPort(obj)
