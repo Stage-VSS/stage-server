@@ -11,7 +11,7 @@ classdef MainPresenter < appbox.Presenter
                 view = stageui.ui.views.MainView();
             end
             obj = obj@appbox.Presenter(view);
-            
+
             obj.settings = stageui.ui.settings.MainSettings();
         end
 
@@ -19,7 +19,7 @@ classdef MainPresenter < appbox.Presenter
 
     methods (Access = protected)
 
-        function onGoing(obj)
+        function willGo(obj)
             obj.view.setWidth('640');
             obj.view.setHeight('480');
             obj.populateMonitorList();
@@ -33,7 +33,9 @@ classdef MainPresenter < appbox.Presenter
             obj.updateStateOfControls();
         end
 
-        function onBind(obj)
+        function bind(obj)
+            bind@appbox.Presenter(obj);
+            
             v = obj.view;
             obj.addListener(v, 'SetFullscreen', @obj.onViewSelectedSetFullscreen);
             obj.addListener(v, 'MinimizeAdvanced', @obj.onViewSelectedMinimizeAdvanced);
@@ -44,24 +46,24 @@ classdef MainPresenter < appbox.Presenter
     end
 
     methods (Access = private)
-        
+
         function populateMonitorList(obj)
             monitors = stage.core.Monitor.availableMonitors();
-            
+
             names = cell(1, numel(monitors));
             for i = 1:numel(monitors)
                 res = monitors{i}.resolution;
                 names{i} = [monitors{i}.name ' (' num2str(res(1)) ' x ' num2str(res(2)) ')'];
             end
             values = monitors;
-            
+
             obj.view.setMonitorList(names, values);
         end
-        
+
         function onViewSelectedSetFullscreen(obj, ~, ~)
             obj.updateStateOfControls();
         end
-        
+
         function onViewSelectedMinimizeAdvanced(obj, ~, ~)
             if obj.view.isAdvancedMinimized()
                 obj.maximizeAdvanced();
@@ -69,29 +71,29 @@ classdef MainPresenter < appbox.Presenter
                 obj.minimizeAdvanced();
             end
         end
-        
+
         function minimizeAdvanced(obj)
             delta = obj.view.getAdvancedHeight() - obj.view.getAdvancedMinimumHeight();
             obj.view.setViewHeight(obj.view.getViewHeight() - delta);
             obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() - delta);
             obj.view.setAdvancedMinimized(true);
         end
-        
+
         function maximizeAdvanced(obj)
             delta = 70;
             obj.view.setViewHeight(obj.view.getViewHeight() + delta);
             obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() + delta);
             obj.view.setAdvancedMinimized(false);
         end
-        
+
         function updateStateOfControls(obj)
             fullscreen = obj.view.getFullscreen();
             obj.view.enableSelectMonitor(fullscreen);
         end
-        
+
         function onViewSelectedStart(obj, ~, ~)
             obj.view.update();
-            
+
             width = str2double(obj.view.getWidth());
             height = str2double(obj.view.getHeight());
             monitor = obj.view.getSelectedMonitor();
@@ -100,26 +102,26 @@ classdef MainPresenter < appbox.Presenter
             disableDwm = obj.view.getDisableDwm();
             try
                 server = stage.core.network.StageServer(port);
-                
+
                 obj.view.hide();
                 obj.view.update();
-                
+
                 server.start([width, height], fullscreen, monitor, 'disableDwm', disableDwm);
             catch x
                 obj.view.showError(x.message);
                 obj.view.show();
                 return;
             end
-            
+
             try
                 obj.saveSettings();
             catch x
                 warning(['Failed to save presenter settings: ' x.message]);
             end
-            
+
             obj.stop();
         end
-        
+
         function onViewSelectedCancel(obj, ~, ~)
             obj.stop();
         end
