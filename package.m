@@ -16,17 +16,47 @@ function package(skipTests)
     version = config.getElementsByTagName('param.version').item(0);
     version.setTextContent(stageui.app.App.version);
 
-    % FIXME: Not sure why Matlab is including the runtime core requirement.
+    % Not sure why Matlab is including the runtime core requirement.
     products = config.getElementsByTagName('param.products.name').item(0);
     items = products.getElementsByTagName('item');
+    commentItems = {};
     for i = 1:items.getLength()
         item = items.item(i-1);
         if strcmp(item.getTextContent(), 'MATLAB Runtime - Core')
-            products.removeChild(item);
+            commentItems{end + 1} = item; %#ok<AGROW>
         end
     end
+    
+    for i = 1:numel(commentItems)
+        item = commentItems{i};
+        comment = item.getOwnerDocument().createComment(item.getTextContent());
+        products.replaceChild(comment, item);
+    end
+    
+    % We don't need these dependencies because they're included with the toolbox.
+    filedeps = config.getElementsByTagName('fileset.depfun').item(0);
+    files = filedeps.getElementsByTagName('file');
+    commentFiles = {};
+    for i = 1:files.getLength()
+        file = files.item(i-1);
+        if ~strncmp(file.getTextContent(), '$', 1)
+            commentFiles{end + 1} = file; %#ok<AGROW>
+        end
+    end
+    
+    for i = 1:numel(commentFiles)
+        file = commentFiles{i};
+        comment = file.getOwnerDocument().createComment(file.getTextContent());
+        filedeps.replaceChild(comment, file);
+    end
 
-    xmlwrite(projectFile, dom);
-
+    % This adds a new line after each line in the XML
+    %xmlwrite(projectFile, dom);
+    
+    domString = strrep(char(dom.saveXML(root)), 'encoding="UTF-16"', 'encoding="UTF-8"');
+    fid = fopen(projectFile, 'w');
+    fwrite(fid, domString);
+    fclose(fid);
+    
     matlab.apputil.package(projectFile);
 end
