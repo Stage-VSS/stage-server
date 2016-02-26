@@ -998,6 +998,12 @@
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\EventData.m</file>
       
          
+         <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\firstNonEmpty.m</file>
+      
+         
+         <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\humanize.m</file>
+      
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\IntelliHintsTextField.m</file>
       
          
@@ -1010,6 +1016,9 @@
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\ListBox.m</file>
       
          
+         <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedListBox.m</file>
+      
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedPopupMenu.m</file>
       
          
@@ -1020,6 +1029,9 @@
       
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\onOff.m</file>
+      
+         
+         <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\packageName.m</file>
       
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Presenter.m</file>
@@ -1059,6 +1071,264 @@
       
          
          <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+views\MainView.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DWM.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DwmEnableComposition.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DwmIsCompositionEnabled.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\GLFW.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwCreateWindow.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwDestroyWindow.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetGammaRamp.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetKey.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitorName.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitorPhysicalSize.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitors.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetVideoMode.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetWindowSize.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwInit.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwMakeContextCurrent.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwPollEvents.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetGamma.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetGammaRamp.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetInputMode.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSwapBuffers.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSwapInterval.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwWindowHint.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\core\mor.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\source\GL.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\source\moglcore.mexw64</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glActiveTexture.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glAttachShader.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindFramebuffer.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindTexture.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindVertexArray.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBlendFunc.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glClear.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glClearColor.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCompileShader.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCreateProgram.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCreateShader.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteProgram.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteShader.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteTextures.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDetachShader.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDisable.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDrawArrays.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDrawBuffer.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glEnable.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGenerateMipmap.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGenTextures.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetProgramiv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetShaderiv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetTexImage.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetTexLevelParameteriv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetUniformLocation.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glLinkProgram.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glPixelStorei.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glReadBuffer.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glReadPixels.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glShaderSource.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexImage1D.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexImage2D.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexParameteri.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexSubImage1D.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexSubImage2D.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform1fv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform1i.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform2fv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform3fv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform4fv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniformMatrix4fv.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUseProgram.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\moglsingle.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\+tcp\TcpConnection.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\+tcp\TcpListen.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\Connection.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\NetEvent.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\NetEventData.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\Server.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\MatrixStack.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\ProgramObject.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\ShaderObject.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\TextureObject.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+network\StageServer.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+shaders\StandardPrograms.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Canvas.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Mask.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Monitor.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Renderer.m</file>
+      
+         
+         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Window.m</file>
     
       
       </fileset.depfun>
