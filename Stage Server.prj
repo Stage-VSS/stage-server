@@ -2,1423 +2,1941 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
   
    
+   
+   
    <configuration build-checksum="2645112706" file="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server\Stage Server.prj" location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server" name="Stage Server" target="target.mlapps" target-name="Package App">
     
+      
+      
       
       <param.appname>Stage Server</param.appname>
     
       
+      
+      
       <param.authnamewatermark/>
     
+      
+      
       
       <param.email/>
     
       
+      
+      
       <param.company>Stage-VSS</param.company>
     
+      
+      
       
       <param.icon>${PROJECT_ROOT}\Symphony_resources\icon_24.png</param.icon>
     
       
+      
+      
       <param.icons>
       
+         
+         
          
          <file>${PROJECT_ROOT}\Symphony_resources\icon_48.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\Symphony_resources\icon_24.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\Symphony_resources\icon_16.png</file>
     
       
+      
+      
       </param.icons>
     
+      
+      
       
       <param.summary/>
     
       
+      
+      
       <param.description/>
     
+      
+      
       
       <param.screenshot/>
     
       
+      
+      
       <param.version>2.0.1.2</param.version>
     
+      
+      
       
       <param.products.name>
       
          
+         
+         
          <item>MATLAB</item>
     
+      
+      
       
       </param.products.name>
     
       
+      
+      
       <param.products.id>
       
+         
+         
          
          <item>1</item>
     
       
+      
+      
       </param.products.id>
     
+      
+      
       
       <param.products.version>
       
          
+         
+         
          <item>8.6</item>
     
+      
+      
       
       </param.products.version>
     
       
+      
+      
       <param.platforms/>
     
+      
+      
       
       <param.output>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server</param.output>
     
       
+      
+      
       <param.guid>013094fa-cca3-4cf8-a02a-735d19db1112</param.guid>
     
+      
+      
       
       <unset>
       
          
+         
+         
          <param.authnamewatermark/>
       
+         
+         
          
          <param.email/>
       
          
+         
+         
          <param.summary/>
       
+         
+         
          
          <param.description/>
       
          
+         
+         
          <param.screenshot/>
       
+         
+         
          
          <param.platforms/>
       
          
+         
+         
          <param.output/>
     
+      
+      
       
       </unset>
     
       
+      
+      
       <fileset.main>
       
+         
+         
          
          <file>${PROJECT_ROOT}\src\main\matlab\main.m</file>
     
       
+      
+      
       </fileset.main>
     
+      
+      
       
       <fileset.depfun>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\.git</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\createTable\createTable.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\createTable\license.txt</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\createTable\table.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\createTable\TableSorter.jar</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\glt.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\BoxPanel.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\CardPanel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\Empty.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\get.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\Grid.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\GridFlex.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\HBox.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\HBoxFlex.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\HButtonBox.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\Panel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\set.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\TabPanel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\unset.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\VBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\VBoxFlex.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uiextras\VButtonBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\+mixin\Container.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\ancestors.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\AncestryObserver.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Box.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\BoxPanel.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\ButtonBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\calcPixelSizes.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\CardPanel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\ChildEvent.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\ChildObserver.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Container.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Divider.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Empty.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Grid.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\GridFlex.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\HBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\HBoxFlex.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\HButtonBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Image.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\inrectangle.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\loadIcon.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\LocationObserver.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Node.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Panel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\pvchk.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelClose.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelDock.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelHelp.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelMaximize.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelMinimize.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\panelUndock.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_NoEdge_NotSelected.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_NoEdge_Selected.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_NotSelected_NoEdge.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_NotSelected_NotSelected.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_NotSelected_Selected.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_Selected_NoEdge.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\Resources\tab_Selected_NotSelected.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\SelectionEvent.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\TabPanel.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\VBox.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\VBoxFlex.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\VButtonBox.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\+uix\VisibilityObserver.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\Contents.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layout\layoutRoot.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\about.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\atoz.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\AxesExample.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\AxesLegendsColorbars.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\BoxPanelFancyStuff.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\compatibility.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Compiling.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserCreateInterface.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserOnListSelection.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserRun.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserScalability.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserStructure.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\demoBrowserUpdateInterface.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\doc.css</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\doc.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\ExampleApp.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\axesexample.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\callbackexample.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\colorbarexample.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\demoBrowser.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\displayEndOfDemoMessage.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\dockexample.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\gridflexpositioning.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\guideApp.fig</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\guideApp.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\hierarchyexample.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\minimizeexample.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\tabpanelexample.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Examples\visibleexample.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\frames.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference1_1.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference1_2.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference1_3.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference1_4.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_1.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_2.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_3.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_4.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_5.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference2_6.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference3_1.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference3_2.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference4_1.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Function reference4_2.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started3.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started4.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started5.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Getting Started6.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\GUI Layout.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpindex.xml</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v2\_0.cfe</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v2\_0.cfs</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v2\_0.si</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v2\segments.gen</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v2\segments_1</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v3\_0.cfe</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v3\_0.cfs</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v3\_0.si</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v3\segments.gen</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helpsearch-v3\segments_1</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helptoc.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\helptoc.xml</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\HierarchyExample.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\axes_inner.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\axes_layout_example_1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\axes_layout_example_2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\axes_layout_example_3.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\axes_outer.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example3.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example4.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example5.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example6.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example_tab.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\basics_example_vbox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_BorderLayout.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_BoxPanel.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_CardPanel.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_Grid.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_GridFlex.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_HBox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_HBoxFlex.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_HButtonBox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_Panel.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_TabPanel.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_VBox.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_VBoxFlex.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bigicon_VButtonBox.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\bookicon.gif</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\Border.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxInBox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanel.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanel2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelDockExample1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelDockExample2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelDockExample3.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelDockExample4.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelHelpExample.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelMinimizeExample1.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelMinimizeExample2.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\BoxPanelMinimizeExample3.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\CardPanel.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\colorbar_example_1.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\colorbar_example_2.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\colorbar_example_3.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\CombineBoxes.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\DefaultsFigure.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\DefaultsSystem1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\DefaultsSystem2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\demoBrowser1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\demoBrowser2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\demoBrowser3.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\demoBrowser4.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\demoicon.gif</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\deploy.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\Empty.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\EnableExample1.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\EnableExample2.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\EnableExample3.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\greenarrowicon.gif</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\Grid.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\GridFlex.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\guide1.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\guide2.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\HBox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\HBoxFlex.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\HButtonBox.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\header.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\headerBG.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\help_ex.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\help_fx.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\help_gs.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\help_rn.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\help_ug.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\leftarrow.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\pageicon.gif</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\pagesicon.gif</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\Panel.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\Panel2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\panelDock.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\panelHelp.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\panelMaximize.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\panelMinimize.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\panelUndock.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\reficon.gif</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\rightarrow.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\TabPanel.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\titleimage.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\uparrow.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VBox.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VBoxFlex.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VButtonBox.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VisibleExample1.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VisibleExample2.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\VisibleExample3.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_fixed1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_fixed2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout0_1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout0_2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout_anno1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_layout_anno2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_normalized1.png</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\Images\why_normalized2.png</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\index.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\info.xml</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\layout.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\layoutDocRoot.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\layoutRoot.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\layouts.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\LayoutsGUIDE.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\PanelDock.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\PanelHelp.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\PanelMinimize.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\releasenotes.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.BoxPanel.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.CardPanel.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.Empty.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.Grid.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.GridFlex.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.HBox.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.HBoxFlex.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.HButtonBox.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.Panel.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.TabPanel.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.VBox.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.VBoxFlex.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\uix.VButtonBox.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1_1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1_2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1_3.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1_4.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide1_5.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide2_1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide2_2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide2_3.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide3.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide3_1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide4.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide4_1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide4_2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide4_3.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide5.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide6.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_1.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_2.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_3.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_4.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_5.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_6.html</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\VisibleExample.html</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\license.txt</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\EventData.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\firstNonEmpty.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\humanize.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\IntelliHintsTextField.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Label.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\layoutHeight.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\ListBox.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedListBox.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedPopupMenu.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessageBoxPresenter.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessageBoxView.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\onOff.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\packageName.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Presenter.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\screenCenter.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\setIconImage.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Settings.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\TabGroup.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Table.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\TextArea.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\UIControl.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\View.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+app\App.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+presenters\MainPresenter.m</file>
       
+         
+         
          
          <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+settings\MainSettings.m</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+views\MainView.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DWM.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DwmEnableComposition.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-dwm\DwmIsCompositionEnabled.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\GLFW.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwCreateWindow.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwDestroyWindow.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetGammaRamp.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetKey.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitorName.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitorPhysicalSize.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetMonitors.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetVideoMode.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwGetWindowSize.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwInit.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwMakeContextCurrent.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwPollEvents.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetGamma.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetGammaRamp.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSetInputMode.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSwapBuffers.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwSwapInterval.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\matlab-glfw3\glfwWindowHint.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\core\mor.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\source\GL.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\source\moglcore.mexw64</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glActiveTexture.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glAttachShader.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindFramebuffer.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindTexture.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBindVertexArray.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glBlendFunc.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glClear.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glClearColor.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCompileShader.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCreateProgram.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glCreateShader.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteProgram.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteShader.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDeleteTextures.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDetachShader.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDisable.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDrawArrays.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glDrawBuffer.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glEnable.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGenerateMipmap.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGenTextures.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetProgramiv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetShaderiv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetTexImage.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetTexLevelParameteriv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glGetUniformLocation.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glLinkProgram.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glPixelStorei.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glReadBuffer.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glReadPixels.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glShaderSource.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexImage1D.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexImage2D.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexParameteri.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexSubImage1D.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glTexSubImage2D.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform1fv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform1i.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform2fv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform3fv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniform4fv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUniformMatrix4fv.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\glUseProgram.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\MOGL\wrap\moglsingle.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\+tcp\TcpConnection.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\+tcp\TcpListen.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\Connection.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\NetEvent.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\NetEventData.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\lib\netbox\src\main\matlab\+netbox\Server.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\MatrixStack.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\ProgramObject.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\ShaderObject.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+gl\TextureObject.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+network\StageServer.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\+shaders\StandardPrograms.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Canvas.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Mask.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Monitor.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Renderer.m</file>
-      
-         
-         <file>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\src\main\matlab\+stage\+core\Window.m</file>
     
+      
+      
       
       </fileset.depfun>
     
       
+      
+      
       <fileset.resources>
       
+         
+         
          
          <file>${PROJECT_ROOT}\lib</file>
       
          
+         
+         
          <file>${PROJECT_ROOT}\src</file>
     
+      
+      
       
       </fileset.resources>
     
       
+      
+      
       <fileset.package/>
     
+      
+      
       
       <build-deliverables>
       
          
+         
+         
          <file location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps" name="stage2-server" optional="false">C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server</file>
     
+      
+      
       
       </build-deliverables>
     
       
+      
+      
       <workflow/>
     
+      
+      
       
       <matlab>
       
          
+         
+         
          <root>C:\Program Files\MATLAB\R2015b</root>
       
+         
+         
          
          <toolboxes/>
     
       
+      
+      
       </matlab>
     
+      
+      
       
       <platform>
       
          
+         
+         
          <unix>false</unix>
       
+         
+         
          
          <mac>false</mac>
       
          
+         
+         
          <windows>true</windows>
       
+         
+         
          
          <win2k>false</win2k>
       
          
+         
+         
          <winxp>false</winxp>
       
+         
+         
          
          <vista>false</vista>
       
          
+         
+         
          <linux>false</linux>
       
+         
+         
          
          <solaris>false</solaris>
       
          
+         
+         
          <osver>6.1</osver>
       
+         
+         
          
          <os32>false</os32>
       
          
+         
+         
          <os64>true</os64>
       
+         
+         
          
          <arch>win64</arch>
       
          
+         
+         
          <matlab>true</matlab>
     
+      
+      
       
       </platform>
   
    
+   
+   
    </configuration>
+
+
 
 
 </deployment-project>
