@@ -14,7 +14,7 @@
     <param.summary/>
     <param.description/>
     <param.screenshot/>
-    <param.version>2.0.1.2</param.version>
+    <param.version>2.0.1.3</param.version>
     <param.products.name>
       <item>MATLAB</item>
     </param.products.name>
@@ -331,6 +331,10 @@
       <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\User guide7_6.html</file>
       <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\layoutdoc\VisibleExample.html</file>
       <file>${PROJECT_ROOT}\lib\appbox\lib\GUI Layout Toolbox\license.txt</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\BusyPresenter.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\BusyView.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Button.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\capitalize.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\EventData.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\firstNonEmpty.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\humanize.m</file>
@@ -340,8 +344,8 @@
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\ListBox.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedListBox.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MappedPopupMenu.m</file>
-      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessageBoxPresenter.m</file>
-      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessageBoxView.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessagePresenter.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\MessageView.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\onOff.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\packageName.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Presenter.m</file>
