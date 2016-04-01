@@ -80,7 +80,7 @@ classdef MainPresenter < appbox.Presenter
         end
 
         function maximizeAdvanced(obj)
-            delta = 70;
+            delta = 73;
             obj.view.setViewHeight(obj.view.getViewHeight() + delta);
             obj.view.setAdvancedHeight(obj.view.getAdvancedHeight() + delta);
             obj.view.setAdvancedMinimized(false);
