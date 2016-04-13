@@ -19,11 +19,30 @@ function package(skipTests)
     dom = xmlread(projectFile);
     root = dom.getDocumentElement();
     config = root.getElementsByTagName('configuration').item(0);
-
+    
+    % Update version number.
     version = config.getElementsByTagName('param.version').item(0);
     version.setTextContent(stageui.app.App.version);
     
-    % We don't need these dependencies because they're included with the toolbox.
+    % Replace fullpaths with ${PROJECT_ROOT}.
+    config.setAttribute('file', '${PROJECT_ROOT}\Stage Server.prj');
+    config.setAttribute('location', '${PROJECT_ROOT}');
+    output = config.getElementsByTagName('param.output').item(0);
+    output.setTextContent('${PROJECT_ROOT}\target');
+    deliverable = config.getElementsByTagName('build-deliverables').item(0).getElementsByTagName('file').item(0);
+    deliverable.setAttribute('location', '${PROJECT_ROOT}');
+    deliverable.setTextContent('${PROJECT_ROOT}\target');
+    
+    % Comment out unsetting the param.output.
+    unsets = config.getElementsByTagName('unset').item(0);
+    param = unsets.getElementsByTagName('param.output');
+    if param.getLength() > 0
+        param = param.item(0);
+        comment = param.getOwnerDocument().createComment(param.getTextContent());
+        unsets.replaceChild(comment, param);
+    end
+    
+    % Comment out dependencies outside the project root folder because they're included with the toolbox.
     filedeps = config.getElementsByTagName('fileset.depfun').item(0);
     files = filedeps.getElementsByTagName('file');
     commentFiles = {};
