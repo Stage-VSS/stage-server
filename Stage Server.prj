@@ -14,7 +14,7 @@
     <param.summary/>
     <param.description/>
     <param.screenshot/>
-    <param.version>2.0.1.4</param.version>
+    <param.version>2.0.2.1</param.version>
     <param.products.name>
       <item>MATLAB</item>
     </param.products.name>
@@ -25,7 +25,7 @@
       <item>9.0</item>
     </param.products.version>
     <param.platforms/>
-    <param.output>C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server</param.output>
+    <param.output>${PROJECT_ROOT}\target</param.output>
     <param.guid>013094fa-cca3-4cf8-a02a-735d19db1112</param.guid>
     <unset>
       <param.authnamewatermark/>
@@ -34,7 +34,6 @@
       <param.description/>
       <param.screenshot/>
       <param.platforms/>
-      <param.output/>
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\src\main\matlab\main.m</file>
@@ -444,11 +443,11 @@
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\lib</file>
-      <file>${PROJECT_ROOT}\src</file>
+      <file>${PROJECT_ROOT}\src\main</file>
     </fileset.resources>
     <fileset.package/>
     <build-deliverables>
-      <file location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps" name="stage2-server" optional="false">C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server</file>
+      <file location="C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server" name="target" optional="false">C:\Users\Client Admin\Documents\src\Stage-VSS\stage2\apps\stage2-server\target</file>
     </build-deliverables>
     <workflow/>
     <matlab>
