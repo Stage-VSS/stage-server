@@ -33,13 +33,11 @@ function package(skipTests)
     deliverable.setAttribute('location', '${PROJECT_ROOT}');
     deliverable.setTextContent('${PROJECT_ROOT}\target');
     
-    % Comment out unsetting the param.output.
+    % Remove unsetting the param.output.
     unsets = config.getElementsByTagName('unset').item(0);
     param = unsets.getElementsByTagName('param.output');
     if param.getLength() > 0
-        param = param.item(0);
-        comment = param.getOwnerDocument().createComment(param.getTextContent());
-        unsets.replaceChild(comment, param);
+        unsets.removeChild(param.item(0));
     end
     
     % Comment out dependencies outside the project root folder because they're included with the toolbox.
