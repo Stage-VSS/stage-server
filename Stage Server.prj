@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2645112706" file="${PROJECT_ROOT}\Stage Server.prj" location="${PROJECT_ROOT}" name="Stage Server" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="356796302" file="${PROJECT_ROOT}\Stage Server.prj" location="${PROJECT_ROOT}" name="Stage Server" target="target.mlapps" target-name="Package App">
     <param.appname>Stage Server</param.appname>
     <param.authnamewatermark>Stage-VSS</param.authnamewatermark>
     <param.email>symphony-das@googlegroups.com</param.email>
     <param.company>Stage-VSS</param.company>
-    <param.icon>${PROJECT_ROOT}\Symphony_resources\icon_24.png</param.icon>
+    <param.icon>${PROJECT_ROOT}\src\main\resources\icons\app_24.png</param.icon>
     <param.icons>
-      <file>${PROJECT_ROOT}\Symphony_resources\icon_48.png</file>
-      <file>${PROJECT_ROOT}\Symphony_resources\icon_24.png</file>
-      <file>${PROJECT_ROOT}\Symphony_resources\icon_16.png</file>
-    </param.icons>
+      
+      
+      
+    <file>${PROJECT_ROOT}\src\main\resources\icons\app_16.png</file><file>${PROJECT_ROOT}\src\main\resources\icons\app_24.png</file><file>${PROJECT_ROOT}\src\main\resources\icons\app_48.png</file></param.icons>
     <param.summary>MATLAB-based visual stimulus system</param.summary>
     <param.description>Stage is a MATLAB-based visual stimulus system for vision research.</param.description>
     <param.screenshot>${PROJECT_ROOT}\src\main\resources\screenshot.png</param.screenshot>
@@ -349,6 +349,10 @@
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+presenters\MainPresenter.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+settings\MainSettings.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+views\MainView.m</file>
+      <file>${PROJECT_ROOT}\src\main\resources\icons\app_16.png</file>
+      <file>${PROJECT_ROOT}\src\main\resources\icons\app_24.png</file>
+      <file>${PROJECT_ROOT}\src\main\resources\icons\app_48.png</file>
+      <file>${PROJECT_ROOT}\src\main\resources\screenshot.png</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\lib</file>

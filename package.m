@@ -24,6 +24,31 @@ function package(skipTests)
     version = config.getElementsByTagName('param.version').item(0);
     version.setTextContent(stageui.app.App.version);
     
+    % Set icon.
+    icon = config.getElementsByTagName('param.icon').item(0);
+    icon.setTextContent(fullfile('${PROJECT_ROOT}', 'src', 'main', 'resources', 'icons', 'app_24.png'));
+    icons = config.getElementsByTagName('param.icons').item(0);
+    files = icons.getElementsByTagName('file');
+    while files.getLength() > 0
+        icons.removeChild(files.item(0));
+    end
+    icon16 = icons.getOwnerDocument().createElement('file');
+    icon24 = icons.getOwnerDocument().createElement('file');
+    icon48 = icons.getOwnerDocument().createElement('file');
+    icon16.setTextContent(fullfile('${PROJECT_ROOT}', 'src', 'main', 'resources', 'icons', 'app_16.png'));
+    icon24.setTextContent(fullfile('${PROJECT_ROOT}', 'src', 'main', 'resources', 'icons', 'app_24.png'));
+    icon48.setTextContent(fullfile('${PROJECT_ROOT}', 'src', 'main', 'resources', 'icons', 'app_48.png'));
+    icons.appendChild(icon16);
+    icons.appendChild(icon24);
+    icons.appendChild(icon48);
+    
+    % Remove unsetting the param.icon.
+    unsets = config.getElementsByTagName('unset').item(0);
+    param = unsets.getElementsByTagName('param.icon');
+    if param.getLength() > 0
+        unsets.removeChild(param.item(0));
+    end
+    
     % Replace fullpaths with ${PROJECT_ROOT}.
     config.setAttribute('file', fullfile('${PROJECT_ROOT}', 'Stage Server.prj'));
     config.setAttribute('location', '${PROJECT_ROOT}');
