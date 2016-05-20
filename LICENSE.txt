@@ -1,29 +1,4 @@
-# Stage Server App
-
-A MATLAB app for starting a Stage server.
-
-## Requirements
-
-- [Stage](https://github.com/Stage-VSS/stage2)
-- Java 7+
-
-## Build
-
-Matlab functions in the root directory are used to build the project. The scripts are named according to the build phase they execute. The phases include:
-
-- `test`: run tests using the Matlab unit test framework
-- `package`: package the project into a .mlappinstall file
-- `install`: install the packaged product into Matlab
-
-Similar to the [Maven Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html), each phase will execute all phases before it (i.e. running `install` will execute `test`, `package`, `install`)
-
-## Directory Structure
-
-The project directory structure generally follows the [Maven Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
-
-## License
-
-The MIT License (MIT)  
+The MIT License (MIT)
 Copyright (c) 2016 Stage-VSS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
