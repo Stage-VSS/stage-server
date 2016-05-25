@@ -11,10 +11,10 @@
       
       
     <file>${PROJECT_ROOT}\src\main\resources\icons\app_16.png</file><file>${PROJECT_ROOT}\src\main\resources\icons\app_24.png</file><file>${PROJECT_ROOT}\src\main\resources\icons\app_48.png</file></param.icons>
-    <param.summary>MATLAB-based visual stimulus system</param.summary>
-    <param.description>Stage is a MATLAB-based visual stimulus system for vision research.</param.description>
+    <param.summary>Visual Stimulus System</param.summary>
+    <param.description>Stage is a MATLAB based visual stimulus system for vision research.</param.description>
     <param.screenshot>${PROJECT_ROOT}\src\main\resources\screenshot.png</param.screenshot>
-    <param.version>2.0.2.1</param.version>
+    <param.version>2.0.3.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
     </param.products.name>
@@ -349,6 +349,7 @@
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+presenters\MainPresenter.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+settings\MainSettings.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+views\MainView.m</file>
+      <file>${PROJECT_ROOT}\src\main\resources\icons\app.psd</file>
       <file>${PROJECT_ROOT}\src\main\resources\icons\app_16.png</file>
       <file>${PROJECT_ROOT}\src\main\resources\icons\app_24.png</file>
       <file>${PROJECT_ROOT}\src\main\resources\icons\app_48.png</file>
