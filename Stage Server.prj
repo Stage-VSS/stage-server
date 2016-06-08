@@ -14,7 +14,7 @@
     <param.summary>Visual Stimulus System</param.summary>
     <param.description>Stage is a MATLAB based visual stimulus system for vision research.</param.description>
     <param.screenshot>${PROJECT_ROOT}\src\main\resources\screenshot.png</param.screenshot>
-    <param.version>2.0.3.1</param.version>
+    <param.version>2.0.3.2</param.version>
     <param.products.name>
       <item>MATLAB</item>
     </param.products.name>
@@ -29,7 +29,6 @@
     <param.guid>013094fa-cca3-4cf8-a02a-735d19db1112</param.guid>
     <unset>
       <param.platforms/>
-      
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\src\main\matlab\main.m</file>
@@ -362,7 +361,7 @@
     </fileset.resources>
     <fileset.package/>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="stage2-server" optional="false">${PROJECT_ROOT}\target</file>
+      <file location="${PROJECT_ROOT}" name="target" optional="false">${PROJECT_ROOT}\target</file>
     </build-deliverables>
     <workflow/>
     <matlab>
