@@ -6,7 +6,12 @@ function main()
     updater = appbox.GitHubUpdater();
     isUpdate = updater.checkForUpdates(stage.app.App.owner, stage.app.App.repo, struct('name', stage.app.App.name, 'version', stage.app.App.version));
     if isUpdate
-        appbox.UpdatePresenter(updater).goWaitStop();
+        p = appbox.UpdatePresenter(updater);
+        p.goWaitStop();
+        if p.result
+            matlab.apputil.run('StageServerAPP');
+            return;
+        end
     end
 
     presenter = stageui.ui.presenters.MainPresenter();
