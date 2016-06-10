@@ -4,13 +4,17 @@ function main()
     deleteBusy = onCleanup(@()delete(busy));
     
     updater = appbox.GitHubUpdater();
-    isUpdate = updater.checkForUpdates(stage.app.App.owner, stage.app.App.repo, struct('name', stage.app.App.name, 'version', stage.app.App.version));
+    appLocation = fullfile(fileparts(mfilename('fullpath')), '..', '..', '..', '..');
+    isUpdate = updater.checkForUpdates(stage.app.App.owner, stage.app.App.repo, ...
+        struct('name', stage.app.App.name, 'version', stage.app.App.version, 'appLocation', appLocation));
     if isUpdate
         p = appbox.UpdatePresenter(updater);
         p.goWaitStop();
-        id = p.result;
-        if ~isempty(id)
-            matlab.apputil.run(id);
+        info = p.result;
+        if ~isempty(info)
+            msg = 'The update is complete. You must run ''clear classes'' or restart MATLAB before Stage Server will launch again.';
+            appbox.MessagePresenter(msg, 'Update Complete', 'OK', [], [], 1).goWaitStop();
+            disp(msg);
             return;
         end
     end
@@ -20,4 +24,3 @@ function main()
     delete(busy);
     presenter.go();
 end
-
