@@ -1,11 +1,12 @@
 # Stage Server App
 
-A MATLAB app for starting a Stage server.
+A MATLAB app for starting a Stage server. Included with the [Stage toolbox](https://github.com/Stage-VSS/stage2).
 
-## Requirements
+## Clone
 
-- [Stage](https://github.com/Stage-VSS/stage2)
-- Java 7+
+`git clone https://github.com/Stage-VSS/stage2-server.git --recursive`
+
+**Note:** You must use the `--recursive` option to recursively clone all submodules.
 
 ## Build
 
