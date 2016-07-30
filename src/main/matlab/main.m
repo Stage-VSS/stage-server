@@ -1,8 +1,8 @@
 function main()
-    busy = appbox.BusyPresenter('This may take a moment.', 'Starting...');
+    busy = appbox.BusyPresenter('Starting...');
     busy.go();
     deleteBusy = onCleanup(@()delete(busy));
-    
+
     updater = appbox.GitHubUpdater();
     appLocation = fullfile(fileparts(mfilename('fullpath')), '..', '..', '..', '..');
     isUpdate = updater.checkForUpdates(stage.app.App.owner, stage.app.App.repo, ...
@@ -20,7 +20,7 @@ function main()
     end
 
     presenter = stageui.ui.presenters.MainPresenter();
-    
+
     delete(busy);
     presenter.go();
 end
