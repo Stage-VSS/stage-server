@@ -29,7 +29,6 @@
     <param.guid>013094fa-cca3-4cf8-a02a-735d19db1112</param.guid>
     <unset>
       <param.platforms/>
-      
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\src\main\matlab\main.m</file>
@@ -319,6 +318,8 @@
       <file>${PROJECT_ROOT}\lib\appbox\lib\UIExtrasComboBox\java_src\src\UIExtrasComboBox\SeparatorListCellRenderer.java</file>
       <file>${PROJECT_ROOT}\lib\appbox\lib\UIExtrasComboBox\java_src\UIExtrasComboBox.iml</file>
       <file>${PROJECT_ROOT}\lib\appbox\lib\UIExtrasComboBox\UIExtrasComboBox.jar</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\+uix\BoxPanel.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\+uix\Text.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\BusyPresenter.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\BusyView.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Button.m</file>
@@ -328,6 +329,7 @@
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\EventData.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\firstNonEmpty.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\GitHubUpdater.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\hpix.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\humanize.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\IntelliHintsTextField.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\Label.m</file>
@@ -350,6 +352,7 @@
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\UpdatePresenter.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\UpdateView.m</file>
       <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\View.m</file>
+      <file>${PROJECT_ROOT}\lib\appbox\src\main\matlab\+appbox\vpix.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+app\App.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+presenters\MainPresenter.m</file>
       <file>${PROJECT_ROOT}\src\main\matlab\+stageui\+ui\+settings\MainSettings.m</file>
@@ -366,7 +369,7 @@
     </fileset.resources>
     <fileset.package/>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="stage-server" optional="false">${PROJECT_ROOT}\target</file>
+      <file location="${PROJECT_ROOT}" name="target" optional="false">${PROJECT_ROOT}\target</file>
     </build-deliverables>
     <workflow/>
     <matlab>
