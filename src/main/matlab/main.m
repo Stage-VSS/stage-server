@@ -1,4 +1,6 @@
 function main()
+    uix.tracking('off');
+
     busy = appbox.BusyPresenter('Starting...');
     busy.go();
     deleteBusy = onCleanup(@()delete(busy));
